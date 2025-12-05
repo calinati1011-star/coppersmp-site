@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    color: white;
+}
+
+.background {
+    position: fixed;
+    inset: 0;
+    background: url("sfondo.png") center/cover no-repeat;
+    filter: blur(8px) brightness(0.6);
+    z-index: -1;
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.logo-round {
+    width: 150px;
+    height: 150px;
+    border-radius: 15%;
+    object-fit: cover;
+}
+
+.title {
+    font-size: 48px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.menu button {
+    margin: 10px 5px;
+    padding: 12px 25px;
+    font-size: 17px;
+    border-radius: 10px;
+    border: none;
+    background: #2b2b2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.menu button:hover {
+    background: #55290f;
+    transform: scale(1.1);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.section {
+    display: none;
+    width: 90%;
+    max-width: 580px;
+}
+
+.section.active {
+    display: block;
+}
+
+.panel {
+    padding: 25px;
+    background: rgba(0,0,0,0.45);
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    animation: fadeIn 0.4s;
+}
+
+.img-toggle {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #444;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.img-toggle:hover {
+    background: #693c11;
+    transform: scale(1.05);
+}
+
+.img-container {
+    display: none;
+    margin-top: 18px;
+    gap: 15px;
+}
+
+.img-container img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+.img-container img:hover {
+    transform: scale(1.03);
+}
+
+.social-btn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 20px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.social-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+.discord {
+    background: #5865F2;
+    color: white;
+}
+
+.discord:hover {
+    background: #707BFC;
+}
+
+.tiktok {
+    background: #000;
+    color: white;
+}
+
+.tiktok:hover {
+    transform: scale(1.05);
+}
+
+.paypal {
+    background: #003087;
+    color: white;
+}
+
+.paypal:hover {
+    background: #0048b4;
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-box {
+    background: #2d2d2d;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    animation: fadeIn 0.3s;
+}
+
+.popup-box button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #777;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}

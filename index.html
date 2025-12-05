@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CopperSMP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background"></div>
+
+<div id="popup">
+    <div class="popup-box">
+        <p>Non ancora pronto</p>
+        <button onclick="closePopup()">Chiudi</button>
+    </div>
+</div>
+
+<header>
+    <img src="logo.jpg" width="200" height="200" class="logo-round">
+    <h1 class="title">CopperSMP</h1>
+    <p class="subtitle">Server in costruzione</p>
+    
+    <div class="menu">
+        <button onclick="showSection('about')">Info</button>
+        <button onclick="showSection('features')">Funzioni</button>
+        <button onclick="showSection('howto')">Come entro nel server?</button>
+        <button onclick="showSection('gallery')">Galleria</button>
+        <button onclick="showSection('socials')">Social</button>
+    </div>
+</header>
+
+<main>
+    <section id="about" class="section active">
+        <div class="panel">
+            <h3>Cos'è CopperSMP</h3>
+            <p>CopperSMP è un server Minecraft basato su fazioni, guerra, towny, rtp, tpa, kit e molto altro. Una community aperta, eventi in live e tanti aggiornamenti.</p>
+        </div>
+    </section>
+
+    <section id="features" class="section">
+        <div class="panel">
+            <h3>Funzionalità Principali</h3>
+            <ul>
+                <li>Fazioni e guerra</li>
+                <li>Sistema Towny</li>
+                <li>RTP casuale</li>
+                <li>Comandi TPA</li>
+                <li>Kits personalizzati</li>
+                <li>NPC interattivi</li>
+                <li>Economia e shop</li>
+            </ul>
+
+            <button class="img-toggle" onclick="toggleImages('npc-img')">Mostra NPC</button>
+            <div id="npc-img" class="img-container">
+                <img src="npc1.jpg">
+                <img src="npc2.jpg">
+            </div>
+        </div>
+    </section>
+
+    <section id="howto" class="section">
+        <div class="panel">
+            <h3>Come entro nel server?</h3>
+            <p><strong>Versione Java:</strong> 1.21.8</p>
+            <p><strong>Nome server:</strong> CopperSMP</p>
+            <p><strong>IP:</strong> coppersmpxxxxxxx.prova</p>
+
+            <button class="img-toggle" onclick="toggleImages('join-img')">Mostra guida</button>
+            <div id="join-img" class="img-container">
+                <img src="join.jpg">
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <div class="panel">
+            <h3>Galleria del Server</h3>
+
+            <button class="img-toggle" onclick="toggleImages('spawn-img')">Spawn</button>
+            <div id="spawn-img" class="img-container">
+                <img src="spawn1.jpg">
+                <img src="sfondo.png">
+                <img src="spawn2.png">
+            </div>
+        </div>
+    </section>
+
+    <section id="socials" class="section">
+        <div class="panel">
+            <h3>Seguici</h3>
+
+            <button class="social-btn discord" onclick="window.open('https://discord.gg/T66KNJ74')">
+                Entra nel Discord
+            </button>
+
+            <button class="social-btn tiktok" onclick="window.open('https://tiktok.com/@copperindott')">
+                TikTok: @copperindott
+            </button>
+
+            <button class="social-btn paypal" onclick="openPopup()">
+                <img src="paypal.jpg">
+                Supportaci su PayPal
+            </button>
+
+            <p>Donanod diventerai un helper e riceverai regali!</p>
+        </div>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
